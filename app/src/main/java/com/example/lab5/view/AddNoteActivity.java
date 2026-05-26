@@ -47,7 +47,7 @@ public class AddNoteActivity extends AppCompatActivity {
         });
         rgNoteType.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.rbChecklistNote) {
-                etNoteContent.setHint("ใส่ข้อมูลเช็คลิสต์ (คั่นด้วยจุลภาค เช่น นม, ไข่)");
+                etNoteContent.setHint("ChecklistNote");
             } else {
                 etNoteContent.setHint("ใส่เนื้อหาข้อความโน๊ตที่นี่");
             }
@@ -70,7 +70,7 @@ public class AddNoteActivity extends AppCompatActivity {
             } else {
                 controller.createTextNote(title, currentDate, content, name, userId, isPremium, expiredDate);
             }
-            Toast.makeText(this, "บันทึกโน๊ตร่วมกับข้อมูลผู้ใช้สำเร็จ!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Savenote", Toast.LENGTH_SHORT).show();
             finish();
         });
     }

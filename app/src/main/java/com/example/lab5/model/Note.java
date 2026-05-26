@@ -3,7 +3,7 @@ package com.example.lab5.model;
 public abstract class Note {
     private String title;
     private String createdDate;
-    private User owner; // ผูกความสัมพันธ์ตามโจทย์ข้อ 3
+    private User owner;
 
     public Note(String title, String createdDate, User owner) {
         this.title = title;
@@ -17,5 +17,5 @@ public abstract class Note {
     public User getOwner() { return owner; }
     public void setOwner(User owner) { this.owner = owner; }
     public abstract void getSummary();
-    public abstract String getSummaryString(); // สำหรับดึงไปโชว์ใน ListView
+    public abstract String getSummaryString();
 }
